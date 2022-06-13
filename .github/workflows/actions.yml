@@ -10,6 +10,9 @@ jobs:
   run-github-actions:
     runs-on: ubuntu-latest
     steps:
+      - name: Payload
+        run:
+          echo "${{ github.events.client_payload.env}}""
       - name: List files
         run: |
           pwd
