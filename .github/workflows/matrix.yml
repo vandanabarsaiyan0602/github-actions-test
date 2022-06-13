@@ -12,9 +12,9 @@ jobs:
             is_ubuntu_8: true
         exclude:
           - os: ubuntu-latest
-            node_modules: 6
+            node_version: 6
           - os: macos-latest
-            node_modules: 10
+            node_version: 10
     runs-on: ${{matrix.os}}
     env:
       IS_UBUNTU_8: ${{matrix.is_ubuntu_8}}
@@ -27,4 +27,4 @@ jobs:
       - name: Log node version
         run: |
           node -v
-          echo ${IS_UBUNTU_8}
+          echo $IS_UBUNTU_8
