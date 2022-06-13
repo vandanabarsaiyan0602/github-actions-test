@@ -17,3 +17,7 @@ jobs:
           import platform
           print(platform.processor())
         shell: python
+      - name: Java command
+        run: |
+          System.out.println("hello from java");
+        shell: javas
