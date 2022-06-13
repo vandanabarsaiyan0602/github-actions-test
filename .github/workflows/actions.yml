@@ -13,6 +13,7 @@ jobs:
         run: |
           pwd
           ls
+          
           echo $GITHUB_SHA
           echo $GITHUB_SHA
           echo $GITHUB_REPOSITORY
