@@ -1,6 +1,11 @@
 name: Shell commands
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
+    path:
+      - '**.js'
 
 jobs:
   run-shell-command:
