@@ -4,7 +4,7 @@ on: push
 jobs:
   node-docker:
     runs-on: ubuntu-latest
-    Services:
+    services:
       app:
         image: alialaa17/node-api
         ports:
