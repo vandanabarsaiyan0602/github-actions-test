@@ -20,4 +20,4 @@ jobs:
       - name: Java command
         run: |
           System.out.println("hello from java");
-        shell: javas
+        shell: java
