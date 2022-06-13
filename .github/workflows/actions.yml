@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Payload
         run:
-          echo ${{ github.events.client_payload.env}}
+          echo ${{ github.event.client_payload.env}}
       - name: List files
         run: |
           pwd
