@@ -17,7 +17,11 @@ jobs:
           import platform
           print(platform.processor())
         shell: python
-      - name: Java command
-        run: |
-          System.out.println("hello from java");
-        shell: java
+  run-windows-command:
+    runs-on: window-latest
+    steps:
+      - name: Directory powershell
+        run: Get-location
+      - name: Directory bash
+        run: pwd
+        shell: bash
